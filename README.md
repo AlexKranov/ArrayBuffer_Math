@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/eo5se8cuh57stapj?svg=true)](https://ci.appveyor.com/project/AlexKranov/arraybuffer-math)
