@@ -1,6 +1,6 @@
-import character from './character';
+import Character from './character';
 
-export default class MathCharacter extends character {
+export default class MathCharacter extends Character {
   set stoned(value) {
     this.isStoned = value;
   }

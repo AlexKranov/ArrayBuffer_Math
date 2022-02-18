@@ -1,7 +1,7 @@
-import character from '../character';
+import Character from '../character';
 
 test('Validation', () => {
-  const result = new character('Character', 'Swordsman');
+  const result = new Character('Character', 'Swordsman');
   expect(result).toEqual({
     name: 'Character',
     type: 'Swordsman',
@@ -13,13 +13,13 @@ test('Validation', () => {
 });
 
 test('short name', () => {
-  expect(() => new character('X', 'Daemon')).toThrowError('неверное имя');
+  expect(() => new Character('X', 'Daemon')).toThrowError('неверное имя');
 });
 
 test('long name', () => {
-  expect(() => new character('CharacterXX', 'Daemon')).toThrowError('неверное имя');
+  expect(() => new Character('CharacterXX', 'Daemon')).toThrowError('неверное имя');
 });
 
 test('invalid type', () => {
-  expect(() => new character('Character', '1111111')).toThrowError('неверный тип');
+  expect(() => new Character('Character', '1111111')).toThrowError('неверный тип');
 });
