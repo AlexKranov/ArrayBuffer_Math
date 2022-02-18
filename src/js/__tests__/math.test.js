@@ -31,3 +31,9 @@ test('ftest attack 1000, distance = 4 and stoned = false', () => {
   ftest.availableAttack = 4;
   expect(ftest.availableAttack).toBe(70);
 });
+
+test('checking true', () => {
+  const check = new Daemon('check');
+  check.stoned = true;
+  expect(check.stoned).toBeTruthy();
+});
